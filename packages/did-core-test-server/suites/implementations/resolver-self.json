@@ -1,6 +1,6 @@
 {
-  "implementation": "Example Resolver",
-  "implementer": "DID Working Group",
+  "implementation": "Self Resolver",
+  "implementer": "Self Group Ltd",
   "didMethod": "did:self",
   "expectedOutcomes": {
     "defaultOutcome": [ 0, 4, 5, 6 ],
@@ -13,7 +13,7 @@
     {
       "function": "resolve",
       "input": {
-        "did": "did:self:111",
+        "did": "did:self:WDnEU4Q6-IGOP1HYvwr_GHByRyFV7jj6bI3rs43qMOc",
         "resolutionOptions": {
         }
       },
@@ -21,20 +21,18 @@
         "didResolutionMetadata": {
         },
         "didDocument": {
-          "id": "did:self:111",
+          "id": "did:self:WDnEU4Q6-IGOP1HYvwr_GHByRyFV7jj6bI3rs43qMOc",
           "verificationMethod": [],
           "service": []
         },
         "didDocumentMetadata": {
-          "canonicalId": "did:self:oneoneone",
-          "equivalentId": ["did:self:one1one", "did:self:1one1"]
         }
       }
     },
     {
       "function": "resolve",
       "input": {
-        "did": "did:self_222",
+        "did": "did:self_0zYuSBNY5UpfQ3hBkDSM4hUBO-i2yksZ6kCkOqmKaz0",
         "resolutionOptions": {
         }
       },
@@ -50,7 +48,7 @@
     {
       "function": "resolve",
       "input": {
-        "did": "did:self:333",
+        "did": "did:self:kmQxpssSIGmLePlrAZ0hCiiJKTkANgGO1U9dxOLaD6U",
         "resolutionOptions": {
         }
       },
@@ -66,7 +64,7 @@
     {
       "function": "resolve",
       "input": {
-        "did": "did:self:444",
+        "did": "did:self:9qn3sHxSZMCxgvkCUHwyCVILlpvfpO7lsYBYMwMeX7s",
         "resolutionOptions": {
         }
       },
@@ -74,7 +72,7 @@
         "didResolutionMetadata": {
         },
         "didDocument": {
-          "id": "did:self:444",
+          "id": "did:self:9qn3sHxSZMCxgvkCUHwyCVILlpvfpO7lsYBYMwMeX7s",
           "verificationMethod": [],
           "service": []
         },
@@ -86,7 +84,7 @@
     {
       "function": "resolveRepresentation",
       "input": {
-        "did": "did:self:555",
+        "did": "did:self:j9aq93TvQtXgqXNyqgGqi3YXVu1lNgBF_EYKjPRrJOs",
         "resolutionOptions": {
           "accept": "application/did+json"
         }
@@ -95,7 +93,7 @@
         "didResolutionMetadata": {
           "contentType": "application/did+json"
         },
-        "didDocumentStream": "{\"id\":\"did:self:555\",\"verificationMethod\":[],\"service\":[]}",
+        "didDocumentStream": "{\"id\":\"did:self:j9aq93TvQtXgqXNyqgGqi3YXVu1lNgBF_EYKjPRrJOs\",\"verificationMethod\":[],\"service\":[]}",
         "didDocumentMetadata": {
         }
       }
@@ -103,7 +101,7 @@
     {
       "function": "resolveRepresentation",
       "input": {
-        "did": "did:self:666",
+        "did": "did:self:ZWUHbKBOi6frwzaD706diNJuIm4z5mPrsyxUhMU00HQ",
         "resolutionOptions": {
           "accept": "application/did+ld+json"
         }
@@ -112,24 +110,7 @@
         "didResolutionMetadata": {
           "contentType": "application/did+ld+json"
         },
-        "didDocumentStream": "{\"@context\":\"https://www.w3.org/ns/did/v1\",\"id\":\"did:self:666\",\"verificationMethod\":[],\"service\":[]}",
-        "didDocumentMetadata": {
-        }
-      }
-    },
-    {
-      "function": "resolveRepresentation",
-      "input": {
-        "did": "did:self:777",
-        "resolutionOptions": {
-          "accept": "application/did+cbor"
-        }
-      },
-      "output": {
-        "didResolutionMetadata": {
-          "contentType": "application/did+cbor"
-        },
-        "didDocumentStream": "62a36469646f6469653a6178706d656c313a3332767272656669636974616f694d6e74656f68806473677265697665630080",
+        "didDocumentStream": "{\"@context\":\"https://www.w3.org/ns/did/v1\",\"id\":\"did:self:ZWUHbKBOi6frwzaD706diNJuIm4z5mPrsyxUhMU00HQ\",\"verificationMethod\":[],\"service\":[]}",
         "didDocumentMetadata": {
         }
       }

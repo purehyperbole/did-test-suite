@@ -1,55 +1,48 @@
 {
-  "didMethod": "did:example",
-  "implementation": "Example DID Method",
-  "implementer": "DID Working Group",
+  "didMethod": "did:self",
+  "implementation": "Self DID Method",
+  "implementer": "Self Group Ltd",
   "supportedContentTypes": [
     "application/did+json",
     "application/did+ld+json"
   ],
-  "dids": ["did:example:123"],
+  "dids": ["did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E"],
   "didParameters": {
-    "hl": "did:example:123?hl=zQmWvQxTqbG2Z9HPJgG57jjwR154cKhbtJenbyYTWkjgF3e",
-    "service": "did:example:123?service=agent&relativeRef=%2Fpath%2Fto%2Fresource",
-    "relativeRef": "did:example:123?service=agent&relativeRef=%2Fpath%2Fto%2Fresource",
-    "versionId": "did:example:123?versionId=0.1.0",
-    "versionTime": "did:example:123?versionTime=2020-09-26T20:14:02Z"
+    "hl": "did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E?hl=zQmWvQxTqbG2Z9HPJgG57jjwR154cKhbtJenbyYTWkjgF3e",
+    "service": "did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E?service=agent&relativeRef=%2Fpath%2Fto%2Fresource",
+    "relativeRef": "did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E?service=agent&relativeRef=%2Fpath%2Fto%2Fresource",
+    "versionId": "did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E?versionId=0.1.0",
+    "versionTime": "did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E?versionTime=2020-09-26T20:14:02Z"
   },
-  "did:example:123": {
+  "did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E": {
     "didDocumentDataModel": {
       "properties": {
-        "id": "did:example:123",
+        "id": "did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E",
         "verificationMethod": [
           {
-            "id": "did:example:123#key-0",
-            "type": "JsonWebKey2020",
-            "controller": "did:example:123",
-            "publicKeyJwk": {
-              "kty": "OKP",
-              "crv": "Ed25519",
-              "x": "VDXDwuGKVq91zxU6q7__jLDUq8_C5cuxECgd-1feFTE"
-            }
-          },
-          {
-            "id": "did:example:123#key-1",
-            "type": "JsonWebKey2020",
-            "controller": "did:example:123",
-            "publicKeyJwk": {
-              "kty": "OKP",
-              "crv": "X25519",
-              "x": "3kY9jl1by7pLzgJktUH-e9H6fihdVUb00-sTzkfmIl8"
-            }
+            "id": "did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E#_xEh-RKMzmaBjemVdAJNmNSiETWsp0REUkIZyKa8YI0",
+            "type": "Ed25519VerificationKey2020",
+            "controller": "did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E",
+            "publicKeyMultibase": "u_xEh-RKMzmaBjemVdAJNmNSiETWsp0REUkIZyKa8YI0"
           }
         ],
-        "authentication": ["#key-0"],
-        "assertionMethod": ["#key-0"],
-        "capabilityInvocation": ["#key-0"],
-        "capabilityDelegation": ["#key-0"],
-        "keyAgreement": ["#key-1"],
-        "bespokeDatetime": "2020-09-26T20:14:02Z",
-        "bespokeDouble": 1.2,
-        "bespokeInteger": 5,
-        "bespokeBoolean": true,
-        "bespokeNull": null
+        "assertionMethod": [
+          {
+            "id": "did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E#DFyZoQmIKAxdRE8AiUco19Ipw4a85sLC6brsaLzCqpE",
+            "type": "Ed25519VerificationKey2020",
+            "controller": "did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E",
+            "publicKeyMultibase": "uDFyZoQmIKAxdRE8AiUco19Ipw4a85sLC6brsaLzCqpE"
+          }
+        ],
+        "authentication": [
+          {
+            "id": "did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E#DFyZoQmIKAxdRE8AiUco19Ipw4a85sLC6brsaLzCqpE",
+            "type": "Ed25519VerificationKey2020",
+            "controller": "did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E",
+            "publicKeyMultibase": "uDFyZoQmIKAxdRE8AiUco19Ipw4a85sLC6brsaLzCqpE"
+          },
+          "#_xEh-RKMzmaBjemVdAJNmNSiETWsp0REUkIZyKa8YI0"
+        ]
       }
     },
     "application/did+json": {
@@ -57,10 +50,10 @@
         "representationSpecificEntries": {
         }
       },
-      "representation": "{\"id\":\"did:example:123\",\"verificationMethod\":[{\"id\":\"did:example:123#key-0\",\"type\":\"JsonWebKey2020\",\"controller\":\"did:example:123\",\"publicKeyJwk\":{\"kty\":\"OKP\",\"crv\":\"Ed25519\",\"x\":\"VDXDwuGKVq91zxU6q7__jLDUq8_C5cuxECgd-1feFTE\"}},{\"id\":\"did:example:123#key-1\",\"type\":\"JsonWebKey2020\",\"controller\":\"did:example:123\",\"publicKeyJwk\":{\"kty\":\"OKP\",\"crv\":\"X25519\",\"x\":\"3kY9jl1by7pLzgJktUH-e9H6fihdVUb00-sTzkfmIl8\"}}],\"authentication\":[\"#key-0\"],\"assertionMethod\":[\"#key-0\"],\"capabilityInvocation\":[\"#key-0\"],\"capabilityDelegation\":[\"#key-0\"],\"keyAgreement\":[\"#key-1\"],\"bespokeDatetime\":\"2020-09-26T20:14:02Z\",\"bespokeDouble\":1.2,\"bespokeInteger\":5,\"bespokeBoolean\":true,\"bespokeNull\":null}",
+      "representation": "{\"id\":\"did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E\",\"verificationMethod\":[{\"id\":\"did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E#_xEh-RKMzmaBjemVdAJNmNSiETWsp0REUkIZyKa8YI0\",\"type\":\"Ed25519VerificationKey2020\",\"controller\":\"did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E\",\"publicKeyMultibase\":\"u_xEh-RKMzmaBjemVdAJNmNSiETWsp0REUkIZyKa8YI0\"}],\"assertionMethod\":[{\"id\":\"did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E#DFyZoQmIKAxdRE8AiUco19Ipw4a85sLC6brsaLzCqpE\",\"type\":\"Ed25519VerificationKey2020\",\"controller\":\"did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E\",\"publicKeyMultibase\":\"uDFyZoQmIKAxdRE8AiUco19Ipw4a85sLC6brsaLzCqpE\"}],\"authentication\":[{\"id\":\"did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E#DFyZoQmIKAxdRE8AiUco19Ipw4a85sLC6brsaLzCqpE\",\"type\":\"Ed25519VerificationKey2020\",\"controller\":\"did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E\",\"publicKeyMultibase\":\"uDFyZoQmIKAxdRE8AiUco19Ipw4a85sLC6brsaLzCqpE\"},\"#_xEh-RKMzmaBjemVdAJNmNSiETWsp0REUkIZyKa8YI0\"]}",
       "didDocumentMetadata": {
-        "canonicalId": "did:example:one-two-three",
-        "equivalentId": "did:example:one-two-three",
+        "canonicalId": "did:self:one-two-three",
+        "equivalentId": "did:self:one-two-three",
         "created": "2020-09-26T20:14:02.000Z",
         "updated": "2020-09-27T20:14:02.000Z",
         "nextUpdate": "2020-09-28T20:14:02.000Z",
@@ -77,7 +70,7 @@
           "@context": ["https://www.w3.org/ns/did/v1"]
         }
       },
-      "representation": "{\"@context\":[\"https://www.w3.org/ns/did/v1\"],\"id\":\"did:example:123\",\"verificationMethod\":[{\"id\":\"did:example:123#key-0\",\"type\":\"JsonWebKey2020\",\"controller\":\"did:example:123\",\"publicKeyJwk\":{\"kty\":\"OKP\",\"crv\":\"Ed25519\",\"x\":\"VDXDwuGKVq91zxU6q7__jLDUq8_C5cuxECgd-1feFTE\"}},{\"id\":\"did:example:123#key-1\",\"type\":\"JsonWebKey2020\",\"controller\":\"did:example:123\",\"publicKeyJwk\":{\"kty\":\"OKP\",\"crv\":\"X25519\",\"x\":\"3kY9jl1by7pLzgJktUH-e9H6fihdVUb00-sTzkfmIl8\"}}],\"authentication\":[\"#key-0\"],\"assertionMethod\":[\"#key-0\"],\"capabilityInvocation\":[\"#key-0\"],\"capabilityDelegation\":[\"#key-0\"],\"keyAgreement\":[\"#key-1\"],\"bespokeDatetime\":\"2020-09-26T20:14:02Z\",\"bespokeDouble\":1.2,\"bespokeInteger\":5,\"bespokeBoolean\":true,\"bespokeNull\":null}",
+      "representation": "{\"@context\":[\"https://www.w3.org/ns/did/v1\"],\"id\":\"did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E\",\"verificationMethod\":[{\"id\":\"did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E#_xEh-RKMzmaBjemVdAJNmNSiETWsp0REUkIZyKa8YI0\",\"type\":\"Ed25519VerificationKey2020\",\"controller\":\"did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E\",\"publicKeyMultibase\":\"u_xEh-RKMzmaBjemVdAJNmNSiETWsp0REUkIZyKa8YI0\"}],\"assertionMethod\":[{\"id\":\"did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E#DFyZoQmIKAxdRE8AiUco19Ipw4a85sLC6brsaLzCqpE\",\"type\":\"Ed25519VerificationKey2020\",\"controller\":\"did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E\",\"publicKeyMultibase\":\"uDFyZoQmIKAxdRE8AiUco19Ipw4a85sLC6brsaLzCqpE\"}],\"authentication\":[{\"id\":\"did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E#DFyZoQmIKAxdRE8AiUco19Ipw4a85sLC6brsaLzCqpE\",\"type\":\"Ed25519VerificationKey2020\",\"controller\":\"did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E\",\"publicKeyMultibase\":\"uDFyZoQmIKAxdRE8AiUco19Ipw4a85sLC6brsaLzCqpE\"},\"#_xEh-RKMzmaBjemVdAJNmNSiETWsp0REUkIZyKa8YI0\"]}",
       "didDocumentMetadata": {},
       "didResolutionMetadata": {
         "contentType": "application/did+ld+json"

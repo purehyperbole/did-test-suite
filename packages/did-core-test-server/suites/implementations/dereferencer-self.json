@@ -1,6 +1,6 @@
 {
-  "implementation": "Example Dereferencer",
-  "implementer": "DID Working Group",
+  "implementation": "Self Dereferencer",
+  "implementer": "Self Group Ltd",
   "didMethod": "did:self",
   "expectedOutcomes": {
     "defaultOutcome": [ 0, 1 ],
@@ -11,7 +11,7 @@
     {
       "function": "dereference",
       "input": {
-        "didUrl": "did:self:222",
+        "didUrl": "did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E",
         "dereferenceOptions": {
           "accept": "application/did+json"
         }
@@ -20,7 +20,7 @@
         "dereferencingMetadata": {
           "contentType": "application/did+json"
         },
-        "contentStream": "{\"id\": \"did:self:222\",\"verificationMethod\": [{\"id\": \"did:self:222#key-1\",\"controller\": \"did:self:222\",\"publicKeyBase58\": \"F6NxfeuPJ5NhmDM6QT2TeSFxcnnkQBgtv6yfQziS5NPM\"}],\"service\": []}",
+        "contentStream": "{\"id\":\"did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E\",\"verificationMethod\":[{\"id\":\"did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E#_xEh-RKMzmaBjemVdAJNmNSiETWsp0REUkIZyKa8YI0\",\"type\":\"Ed25519VerificationKey2020\",\"controller\":\"did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E\",\"publicKeyMultibase\":\"u_xEh-RKMzmaBjemVdAJNmNSiETWsp0REUkIZyKa8YI0\"}],\"assertionMethod\":[{\"id\":\"did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E#DFyZoQmIKAxdRE8AiUco19Ipw4a85sLC6brsaLzCqpE\",\"type\":\"Ed25519VerificationKey2020\",\"controller\":\"did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E\",\"publicKeyMultibase\":\"uDFyZoQmIKAxdRE8AiUco19Ipw4a85sLC6brsaLzCqpE\"}],\"authentication\":[{\"id\":\"did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E#DFyZoQmIKAxdRE8AiUco19Ipw4a85sLC6brsaLzCqpE\",\"type\":\"Ed25519VerificationKey2020\",\"controller\":\"did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E\",\"publicKeyMultibase\":\"uDFyZoQmIKAxdRE8AiUco19Ipw4a85sLC6brsaLzCqpE\"},\"#_xEh-RKMzmaBjemVdAJNmNSiETWsp0REUkIZyKa8YI0\"]}",
         "contentMetadata": {
         }
       }
@@ -28,7 +28,7 @@
     {
       "function": "dereference",
       "input": {
-        "didUrl": "did:self:222#key-1",
+        "didUrl": "did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E#DFyZoQmIKAxdRE8AiUco19Ipw4a85sLC6brsaLzCqpE",
         "dereferenceOptions": {
           "accept": "application/did+json"
         }
@@ -37,7 +37,7 @@
         "dereferencingMetadata": {
           "contentType": "application/did+json"
         },
-        "contentStream": "{\"id\": \"did:self:222#key-1\",\"controller\": \"did:self:222\",\"publicKeyBase58\": \"F6NxfeuPJ5NhmDM6QT2TeSFxcnnkQBgtv6yfQziS5NPM\"}",
+        "contentStream": "{\"id\":\"did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E#DFyZoQmIKAxdRE8AiUco19Ipw4a85sLC6brsaLzCqpE\",\"type\":\"Ed25519VerificationKey2020\",\"controller\":\"did:self:ygK-Y2W_S178hi850es3S-OuGSc276l-OBc-SDjHy3E\",\"publicKeyMultibase\":\"uDFyZoQmIKAxdRE8AiUco19Ipw4a85sLC6brsaLzCqpE\"}",
         "contentMetadata": {
         }
       }
@@ -45,7 +45,7 @@
     {
       "function": "dereference",
       "input": {
-        "didUrl": "did:self_333",
+        "didUrl": "did:bQM1SEpngKIIV7X7VHevEph0nrL6FZHPfUMAaF4FVLc",
         "dereferenceOptions": {
           "accept": "application/did+json"
         }
@@ -62,7 +62,7 @@
     {
       "function": "dereference",
       "input": {
-        "didUrl": "did:self:444",
+        "didUrl": "did:self:JIRjH5hgxIkG-OpGt6AhvC4ZamE4uodSu2V1Rb1sujg",
         "dereferenceOptions": {
           "accept": "application/did+ld+json"
         }
